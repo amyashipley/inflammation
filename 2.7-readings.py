@@ -2,7 +2,7 @@ import numpy
 import loaddata
 
 def main():
-	filename='data/inflammation-01.csv'
+	filename=sys.argv[1]
 	data = loaddata.load(filename)
 	print filename
 	print data.mean(axis=1)
